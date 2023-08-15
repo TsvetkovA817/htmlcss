@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=10">
+    <link href="https://myfonts.ru/myfonts?fonts=golos-ui" rel="stylesheet" type="text/css" />
+    <link href="https://myfonts.ru/myfonts?fonts=doloman-pavljenko" rel="stylesheet" type="text/css" />
+    <title>Elder books</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="content_wrapper">
+
+        <div class="header">
+            <div class="header__logo" onclick="openInThisTab('index.html');">
+                <img class="header__bookopen_img" src="./img/book_open.svg" alt="BookOpen">
+                <span>BOOKSTORE</span>
+            </div>
+            <div class="header__right">
+                <img class="header__user_img" src="./img/user1.svg" alt="user">
+                <img src="./img/book_mark.svg" alt="BookMark">
+                <img class="header__cart_img" src="./img/cart1.svg" alt="Cart">
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <main class="content">
+
+                <div class="cart_right_page_off" id="id1">
+                    <nav class="cart_right">
+                        <img class="cart_right_close_img" src="img/close.png" alt="close">
+                        <div class="cart_right_h4_wrap">
+                            <img src="./img/caret_left_cart.svg" class="cart_right_back_img" alt="back">
+                            <h4 class="cart_right_h4">Ваша корзина</h4>
+                        </div>
+                        <div class="cart_right_products">
+                            <div class="cart_right_product_wrap">
+
+                                <div class="cart_right_card">
+                                    <div class="cart_right_card_img">
+                                        <img src="./img/catalog/k02/cb1_13.jpg" alt="cover">
+                                    </div>
+                                    <div class="cart_right_card_title_wrap">
+                                        <div class="cart_right_card_title">
+                                            <h3>Название книги</h3>
+                                            <p>Имя автора</p>
+                                        </div>
+                                        <div class="cart_right_count">
+                                            <div class="cart_right_count_wrap">
+                                                <button data-action="decrement" class="cart_right_count_button">
+                                                    <img src="./img/minus_circle.svg" alt="minus">
+                                                </button>
+                                                <input type="number" name="cart_right_inp" id="cart_right_inp" min="1"
+                                                    value="1" />
+                                                <button data-action="increment" class="cart_right_count_button">
+                                                    <img src="./img/plus_circle.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_right_card_price">
+                                        <p>Р 30.00 </p>
+                                        <img src="./img/trash.svg" alt="trash">
+                                    </div>
+                                </div>
+
+                                <div class="cart_right_card">
+                                    <div class="cart_right_card_img">
+                                        <img src="./img/catalog/k02/cb1_16.jpg" alt="cover">
+                                    </div>
+                                    <div class="cart_right_card_title_wrap">
+                                        <div class="cart_right_card_title">
+                                            <h3>Название книги</h3>
+                                            <p>Имя автора</p>
+                                        </div>
+                                        <div class="cart_right_count">
+                                            <div class="cart_right_count_wrap">
+                                                <button data-action="decrement" class="cart_right_count_button">
+                                                    <img src="./img/minus_circle.svg" alt="minus">
+                                                </button>
+                                                <input type="number" name="cart_right_inp" id="cart_right_inp" min="1"
+                                                    value="1" />
+                                                <button data-action="increment" class="cart_right_count_button">
+                                                    <img src="./img/plus_circle.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_right_card_price">
+                                        <p>Р 30.00 </p>
+                                        <img src="./img/trash.svg" alt="trash">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cart_right_product_itog">
+                                <div class="cart_right_product_itog_wrap">
+                                    <span class="cart_right_itog_lbl">Итого:</span>
+                                    <span class="cart_right_itog_price">Р 60.00</span>
+                                </div>
+                                <div class="cart_right_itog_btn">Оплатить</div>
+                            </div>
+
+                        </div>
+
+                    </nav>
+                </div>
+
+                <div class="book_card">
+                    <div class="book_card_left">
+                        <div class="book_card_cover">
+                            <img src="./img/catalog/k01/cb2_12.jpg" alt="cover_book">
+                        </div>
+                    </div>
+                    <div class="book_card_right">
+                        <div class="book_card_title_wrap">
+                            <h2 class="book_card_h">A hipótese do Amor</h2>
+                            <div class="ctl_card_price_fav">
+                                <img src="./img/book_mark_ctl.svg" alt="book_mark">
+                            </div>
+
+                        </div>
+
+                        <div class="book_card_autor book_card_text_border">
+                            Автор (ы): имя автора
+                        </div>
+
+                        <div class="book_card_desc book_card_text_border">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
+                            est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                            lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
+                            lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos.
+                        </div>
+
+                        <div class="book_card_seller book_card_text_border">
+                            Продавец: имя / наименование продавца
+                        </div>
+
+                        <div class="book_card_price_wrap">
+                            <div class="book_card_price">
+                                ₽30,00
+                            </div>
+                        </div>
+
+                        <div class="book_card_btns_wrap">
+                            <div class="ctl_card_cart">
+                                <img src="./img/cart2.svg" alt="cart_ctl">
+                            </div>
+                            <div class="book_card_buy">
+                                Купить
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="book_ctl">
+                    <div class="ctl_categ1">
+                        <div class="ctl_categ_title">
+                            <img src="./img/path.svg" alt="path">
+                            <span>Рекомендуем</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+
+                        <div class="ctl_card">
+                            <div class="ctl_card_img_wrap">
+                                <img src="./img/catalog/k01/cb1_7.jpg" alt="cover_book1">
+                            </div>
+                            <div class="ctl_card_title">Название книги</div>
+                            <div class="ctl_card_price_wrap">
+                                <div class="ctl_card_price"><span>₽30.00</span></div>
+                                <div class="ctl_card_price_fav">
+                                    <img src="./img/book_mark_ctl.svg" alt="book_mark">
+                                </div>
+                            </div>
+                            <div class="ctl_card_cart">
+                                <img src="./img/cart2.svg" alt="cart_ctl">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="div3">
+
+                        <div class="ctl_card">
+                            <div class="ctl_card_img_wrap">
+                                <img src="./img/catalog/k01/cb1_8.jpg" alt="cover_book1">
+                            </div>
+                            <div class="ctl_card_title">Название книги</div>
+                            <div class="ctl_card_price_wrap">
+                                <div class="ctl_card_price"><span>₽30.00</span></div>
+                                <div class="ctl_card_price_fav">
+                                    <img src="./img/book_mark_ctl.svg" alt="book_mark">
+                                </div>
+                            </div>
+                            <div class="ctl_card_cart">
+                                <img src="./img/cart2.svg" alt="cart_ctl">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="div4">
+
+                        <div class="ctl_card">
+                            <div class="ctl_card_img_wrap">
+                                <img src="./img/catalog/k01/cb1_9.jpg" alt="cover_book1">
+                            </div>
+                            <div class="ctl_card_title">Название книги</div>
+                            <div class="ctl_card_price_wrap">
+                                <div class="ctl_card_price"><span>₽30.00</span></div>
+                                <div class="ctl_card_price_fav">
+                                    <img src="./img/book_mark_ctl.svg" alt="book_mark">
+                                </div>
+                            </div>
+                            <div class="ctl_card_cart">
+                                <img src="./img/cart2.svg" alt="cart_ctl">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="div5">
+                        <div class="ctl_card">
+                            <div class="ctl_card_img_wrap">
+                                <img src="./img/catalog/k01/cb1_10.jpg" alt="cover_book1">
+                            </div>
+                            <div class="ctl_card_title">Название книги</div>
+                            <div class="ctl_card_price_wrap">
+                                <div class="ctl_card_price"><span>₽30.00</span></div>
+                                <div class="ctl_card_price_fav">
+                                    <img src="./img/book_mark_ctl.svg" alt="book_mark">
+                                </div>
+                            </div>
+                            <div class="ctl_card_cart">
+                                <img src="./img/cart2.svg" alt="cart_ctl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div6">
+
+                        <div class="ctl_card">
+                            <div class="ctl_card_img_wrap">
+                                <img src="./img/catalog/k01/cb1_11.jpg" alt="cover_book1">
+                            </div>
+                            <div class="ctl_card_title">Название книги</div>
+                            <div class="ctl_card_price_wrap">
+                                <div class="ctl_card_price"><span>₽30.00</span></div>
+                                <div class="ctl_card_price_fav">
+                                    <img src="./img/book_mark_ctl.svg" alt="book_mark">
+                                </div>
+                            </div>
+                            <div class="ctl_card_cart">
+                                <img src="./img/cart2.svg" alt="cart_ctl">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+
+        <div class="footer_line">
+            <span>&nbsp;</span>
+        </div>
+        <footer class="footer">
+
+            <div class="footer_left">
+                <img src="./img/book_open.svg" alt="book">
+                <span>BOUQINIST</span>
+            </div>
+            <div class="footer_center">
+                <div class="footer_social1">
+                    <img class="footer_social1_img" src="./img/telegram.svg" alt="telegram">
+                </div>
+                <div class="footer_social2">
+                    <img class="footer_social2_img" src="./img/git.svg" alt="git">
+                </div>
+                <div class="footer_social3">
+                    <img class="footer_social3_img" src="./img/email.svg" alt="email">
+                </div>
+
+            </div>
+            <div class="footer_right">
+                <span>by Bouqinist Team</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/s1.js"> </script>
+
+</body>
+
+</html>
